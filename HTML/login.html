@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Coding Conf</title>
+
+    <link rel="icon" type="image/svg+xml"
+          href="../assets/images/logo-mark.svg">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/validation.js" defer></script>
+</head>
+
+<body>
+
+    <div class="background-decoration" aria-hidden="true"></div>
+
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <img src="../assets/images/logo-full.svg"
+                 alt="Coding Conf">
+        </a>
+
+    </header>
+
+    <main class="form-main">
+
+        <section class="form-heading">
+
+            <h1>Your Journey to Coding Conf 2026 Starts Here!</h1>
+
+            <p>
+                Secure your spot at the biggest coding conference of the year.
+            </p>
+
+        </section>
+
+        <form id="registrationForm"
+              class="registration-form"
+              novalidate>
+
+            <div class="form-group upload-group">
+
+                <label for="avatar">Upload Avatar</label>
+
+                <div class="upload-box">
+
+                    <img src="../assets/images/icon-upload.svg"
+                         alt=""
+                         id="uploadIcon">
+
+                    <p id="uploadText">
+                        Drag and drop or click to upload
+                    </p>
+
+                    <input
+                        type="file"
+                        id="avatar"
+                        name="avatar"
+                        accept="image/png,image/jpeg"
+                        aria-describedby="avatarHelp avatarError">
+
+                </div>
+
+                <p class="helper-text" id="avatarHelp">
+
+                    <img src="../assets/images/icon-info.svg" alt="">
+
+                    Upload your photo (JPG or PNG, max size: 500KB).
+                    If you skip this step, a default avatar will be used.
+
+                </p>
+
+                <p class="error-message" id="avatarError"></p>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="John Doe"
+                    autocomplete="name">
+
+                <p class="error-message" id="nameError"></p>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email">
+
+                <p class="error-message" id="emailError"></p>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="github">GitHub Username</label>
+
+                <div class="input-with-icon">
+
+                    <img src="../assets/images/icon-github.svg"
+                         alt="">
+
+                    <input
+                        type="text"
+                        id="github"
+                        name="github"
+                        placeholder="@yourusername">
+
+                </div>
+
+                <p class="error-message" id="githubError"></p>
+
+            </div>
+
+            <p class="form-error" id="formError" role="alert"></p>
+
+            <button class="primary-button submit-button"
+                    type="submit">
+
+                Generate My Ticket
+
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Coding Conf 2026 · Papine, Kingston, Jamaica</p>
+    </footer>
+
+</body>
+</html>
